@@ -1,9 +1,7 @@
-# Problem Statement : https://www.geeksforgeeks.org/check-if-a-given-graph-is-bipartite-using-dfs/
-
+ # Problem Statement : https://www.geeksforgeeks.org/check-if-a-given-graph-is-bipartite-using-dfs/
 def addEdge(adj, u, v):
     adj[u].append(v)
     adj[v].append(u)
-
 
 def DFS(graph,vertex,visited,color):
 

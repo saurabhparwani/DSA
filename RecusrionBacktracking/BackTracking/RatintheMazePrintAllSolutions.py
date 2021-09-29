@@ -1,3 +1,5 @@
+# Problem Statement : https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1
+
 # Maze Size
 N = 4
 count = [0]
@@ -60,7 +62,7 @@ def solveMaze(maze):
 # Driver program to test above function
 if __name__ == "__main__":
     # Initialising the maze
-    maze = [[1, 1, 0, 0],
+    maze = [[1, 0, 0, 0],
             [1, 1, 0, 1],
             [1, 1, 0, 0],
             [0, 1, 1, 1]]
