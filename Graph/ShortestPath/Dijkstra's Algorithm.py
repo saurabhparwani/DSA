@@ -7,7 +7,7 @@ def dijkstraAlgo(graph,starting_vertex):
 
     # Mark the distance from source to itself as 0. And add this to Priority Queue.
     distances[starting_vertex] = 0
-    pq = [(starting_vertex,0)]
+    pq = [(starting_vertex,0)]  
 
     while len(pq) !=0:
 
@@ -50,5 +50,5 @@ example_graph = {
     'Z': {'W': 5, 'Y': 1},
 }
 
-print("Shortest path from Source vertex to all other verteces")
+print("Shortest path from Source vertex to all other vertices")
 print(dijkstraAlgo(example_graph,'X'))
