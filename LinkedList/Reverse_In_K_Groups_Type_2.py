@@ -125,6 +125,6 @@ L.makeList(10)
 L.printList()
 
 #
-L.head = L.reverseInGroups(L.head,6)
+L.head = L.reverseInGroups(L.head,2)
 # L.head = L.reverseInGroupsIterative(4)
 L.printList()
