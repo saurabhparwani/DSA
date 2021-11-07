@@ -1,4 +1,3 @@
-
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -7,7 +6,6 @@ class Node(object):
         self.hd = 0
     def __str__(self):
         return str(self.data)
-
 def BuildTree():
     root = Node(50)
     root.left=Node(20)
