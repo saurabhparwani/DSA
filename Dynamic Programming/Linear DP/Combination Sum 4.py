@@ -36,7 +36,7 @@ def getCombinations(nums,target):
 
 # Driver Code
 nums = [1,2,3]
-target = 100
+target = 3
 
 # answer = getCombinations(nums,target)
 #

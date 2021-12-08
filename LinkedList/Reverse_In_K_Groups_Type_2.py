@@ -108,9 +108,6 @@ class LinkedList(object):
             pointers[3].next = None
         return pointers[2]
 
-
-
-
 def changePointers(node):
     if pointers[0] is None:
         pointers[0] = pointers[1] = node
