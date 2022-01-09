@@ -2,7 +2,7 @@
 
 def heapifyMax(arr,i,n):
     # Let Suppose that element at current position is largest ,
-    # now calculate it's left & right child and swap parent node with larget node.
+    # now calculate it's left & right child and swap parent node with largest node.
     largest_index = i
     left_child = 2*i+1
     right_child = 2*i+2

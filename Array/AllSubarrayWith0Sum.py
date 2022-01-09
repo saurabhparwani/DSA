@@ -18,7 +18,7 @@ def countSubArrayWith0Sum(arr):
     count = 0
     hash_map = {}
 
-    # Store the 0 Sum in the hashmap with frequency 1.
+    # Store the 0 Sum in the hash map with frequency 1.
     hash_map[0] = 1
 
     for i in arr:
