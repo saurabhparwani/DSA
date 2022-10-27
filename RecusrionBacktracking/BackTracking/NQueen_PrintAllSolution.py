@@ -39,7 +39,7 @@ def isSafe(board,row,col):
     return True
 
 
-# Recusrive Function to Check that Whether we can Place a Queen at this column or not .
+# Recursive Function to Check that Whether we can Place a Queen at this column or not .
 # If we can place the queen at the current place then check for next queen next column.
 
 def solveNQueenUtility(board,col):

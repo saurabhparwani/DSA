@@ -31,7 +31,7 @@ class Graph(object):
     # SC = O(V)
     def printOrder(self,n,m):
 
-        # Create an indegree array to store the in degrees of the vertices.
+        # Create an in degree array to store the in degrees of the vertices.
         indegree = [0]*(n+1)
 
         # Traverse the graph and count the indegree of each nodes . It will take O(V+E).

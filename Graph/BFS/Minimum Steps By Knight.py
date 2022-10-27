@@ -6,9 +6,8 @@ class cell(object):
         self.y = y
         self.dist = dist
 
-
 def isInside(x,y,N):
-    return x >=1 and x <= N and y >= 1 and y <= N
+    return x >= 1 and x <= N and y >= 1 and y <= N
 
 # TC  = O(N*N)  At worst case, all the cells will be visited so time complexity is O(N^2).
 # SC = O(N*N)  The nodes are stored in queue. So the space Complexity is O(N^2).

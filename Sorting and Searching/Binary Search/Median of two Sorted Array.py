@@ -23,7 +23,7 @@ def getMedian(arr1,arr2):
 
         cut2 = (n1+n2)//2 - cut1  # As we need equal elements in both sides that's why cut2 will be like that both half contains equal elements.
 
-        # Not get the left elements of both the arrays if cut is not at the first element else assign inimum value.
+        # Not get the left elements of both the arrays if cut is not at the first element else assign minimum value.
         left1 = arr1[cut1-1] if cut1 else -float('inf')
         left2 = arr2[cut2-1] if cut2 else -float('inf')
 

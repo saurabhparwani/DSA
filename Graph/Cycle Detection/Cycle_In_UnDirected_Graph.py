@@ -14,7 +14,6 @@ class Graph(object):
 
         # Create and Undirected Graph , that's why both the nodes will connect each other
         self.graph[u].append(v)
-
         self.graph[v].append(u)
 
     def buildGraph(self):
@@ -29,7 +28,7 @@ class Graph(object):
     # If it is not the Parent then there is a cycle.
     def isCyclicDFSUtility(self,source,visited,parent):
 
-        # Mark Sorce node Visited
+        # Mark Source node Visited
         visited[source] =  True
 
         # Traverse Through each neighbour of source and then call DFS for each Unvisited vertex

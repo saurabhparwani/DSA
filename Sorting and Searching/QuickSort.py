@@ -1,5 +1,4 @@
 def partition(a,start,end):
-
     # Assign the Pivot Value & Index
      pivot = a[end]
      pivot_index = start
@@ -10,9 +9,6 @@ def partition(a,start,end):
      # Swap the Pivot_Index element with the last element so that Pivot element
      a[pivot_index],a[end] = a[end],a[pivot_index]
      return  pivot_index
-
-
-
 def quickSort(arr,start,end):
     if start < end :
 

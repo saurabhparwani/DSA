@@ -30,6 +30,5 @@ def subsetSum(arr):
 # Driver Code
 
 arr = [3,1,2]
-
 answer = subsetSum(arr)
 print(answer)

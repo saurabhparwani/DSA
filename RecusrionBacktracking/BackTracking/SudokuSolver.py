@@ -61,7 +61,7 @@ def solveSudoku(grid,row,col):
             # BackTrack if the previous selection was wrong
             grid[row][col] = 0
 
-    # If any of the combinaton is not working then return false
+    # If any of the combination is not working then return false
     return  False
 
 

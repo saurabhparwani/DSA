@@ -2,7 +2,6 @@
 
 from collections import deque
 
-
 # A class to represent a graph object
 class Graph:
     # Constructor

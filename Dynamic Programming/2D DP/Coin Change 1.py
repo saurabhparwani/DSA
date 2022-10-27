@@ -11,7 +11,7 @@ def helperMethod(coins,amount,n,DP):
     # Base Case 2
     if n < 0:return float("inf")
 
-    # If the subproblem has been already solved then simply return the previously calculated answer.
+    # If the sub problem has been already solved then simply return the previously calculated answer.
     if DP[n][amount] != -1:
         return DP[n][amount]
 
@@ -25,6 +25,7 @@ def helperMethod(coins,amount,n,DP):
     exclude = helperMethod(coins,amount,n-1,DP)
     DP[n][amount] = min(include,exclude)
     return DP[n][amount]
+
 def minimumCoins(coins,amount):
     n = len(coins)
     DP = [[-1 for _ in range(amount+1)] for _ in range(n+1)]

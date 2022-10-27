@@ -12,11 +12,11 @@ class Graph(object):
 
     def topologicalSort(self):
 
-        # Create a vector to store indegrees of all
-        # vertices. Initialize all indegrees as 0.
+        # Create a vector to store in degrees of all
+        # vertices. Initialize all in degrees as 0.
         indegree = [0] * (self.V)
 
-        # Traverse adjacency lists to fill indegrees of
+        # Traverse adjacency lists to fill in degrees of
         # vertices.  This step takes O(V + E) time
         for i in self.graph:
             for j in self.graph[i]:
@@ -31,16 +31,16 @@ class Graph(object):
             if indegree[i] == 0:
                 queue.append(i)
 
-        # One by one dequeue vertices from queue and enqueue
-        # adjacents if indegree of adjacent becomes 0
+        # One by one de queue vertices from queue and enqueue
+        # adjacents if in degree of adjacent becomes 0
         while queue:
-            # Extract front of queue (or perform dequeue)
+            # Extract front of queue (or perform de queue)
             # and add it to topological order
             u = queue.pop(0)
             topological_order.append(u)
 
             # Iterate through all neighbouring nodes
-            # of dequeued node u and decrease their in-degree by 1
+            # of de queued node u and decrease their in-degree by 1
             for v in self.graph[u]:
                 indegree[v]-=1
                 # If in-degree becomes zero, add it to queue
@@ -57,7 +57,7 @@ class Graph(object):
 
 # Time Complexity: O(V+E).
 # The outer for loop will be executed V number of times and the inner for loop will be executed E number of times.
-# Auxillary Space: O(V).
+# Auxiliary Space: O(V).
 # The queue needs to store all the vertices of the graph. So the space required is O(V)
 
 

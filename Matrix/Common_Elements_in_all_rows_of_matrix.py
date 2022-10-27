@@ -3,7 +3,7 @@
 # Method to print common elements of matrix  if element is present in all rows. Steps :
 # 1. Store all the elements of first row in an map or dictionary which find keys in O(1) time.
 # 2 . Now traverse the each row and check that element is present in map or not and also check for duplicate case
-#     like if a element is occuring two times in a single row then count it's present only once and update map according to that.
+#     like if a element is occurring two times in a single row then count it's present only once and update map according to that.
 # 3. In the end all the elements which exist in every row print all of them.
 # TC = O(M*N)  , SC = O(N)   where M = Total rows , N = Total Columns
 

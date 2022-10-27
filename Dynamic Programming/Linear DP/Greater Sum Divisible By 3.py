@@ -9,7 +9,7 @@ def greatestSumDivisibleByThree(nums):
         for i in range(3):
             ind = (copy_rem[i] + num ) % 3
             rem[ind] = max(rem[ind],copy_rem[i] + num)
-
+        print(rem)
     return rem[0]
 
 

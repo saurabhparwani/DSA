@@ -42,7 +42,7 @@ def getMaximumKnapsack_TopDown(W,val,wt,n):
 def getMaximumKnapsack_BottomUp(W,val,wt,n):
 
     # Base case:
-    if W == 0 or n== 0:return 0
+    if W == 0 or n == 0:return 0
 
     DP =  [[0 for col in range(W+1)] for row in range(n+1)]
 

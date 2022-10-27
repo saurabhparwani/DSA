@@ -1,6 +1,4 @@
 def merge(a,left,middle,right):
-
-
     # Initial values for variables that we use to keep
     # track of where we are in each array
 
@@ -35,9 +33,6 @@ def merge(a,left,middle,right):
     for i in range(left,right+1):
         a[i] = temp[i-left]
 
-
-
-
 def merge_sort(a,left,right):
     if left < right:
         # middle = (left+(right-1))//2     #  It is Same as (left + right ) //2
@@ -45,7 +40,6 @@ def merge_sort(a,left,right):
         merge_sort(a,left,middle)
         merge_sort(a,middle+1,right)
         merge(a,left,middle,right)
-
 
 a=[33, 42, 9,9,8,4, 37, 8, 47, 5, 29, 49, 31, 4, 48, 16, 22, 26]
 print(a)

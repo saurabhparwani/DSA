@@ -79,10 +79,10 @@ def pattern_7(n):
 
 
 n = int(input('Enter the Number of lines : '))
-# pattern_1(n)
-# pattern_2(n)
-# pattern_3(n)
-# pattern_4(n)
-# pattern_5(n)
-# pattern_6(n)
+pattern_1(n)
+pattern_2(n)
+pattern_3(n)
+pattern_4(n)
+pattern_5(n)
+pattern_6(n)
 pattern_7(n)
